@@ -42,32 +42,3 @@
 </div>
 
 <br />
-
-## Usage
-
-```js
-const r2load = require('r2load');
-const loader = r2load();
-const app = {};
-loader
-  .load('model')
-  .load('controller')
-  .load('service')
-  .into(app);
-
-/*
-{
-  services: {
-    'model/users': ...,
-    'controller/users': ...,
-    'service/users': ...,
-  }
-}
-*/
-```
-
-## Installation
-
-```bash
-$ npm install r2load
-```
